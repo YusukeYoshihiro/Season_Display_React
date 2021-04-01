@@ -27,12 +27,12 @@ const SeasonDisplay = (props) => {
 
   return (
     <>
-    <SeasonCtn season={season}>
-      <IconLeft className={`massive ${iconName} icon`}/>
+    <SeasonCtn className={` ${season} icon`} >
+      <IconLeft className={`massive ${iconName} icon`} season={season}/>
       <h2> 
         {text}
       </h2>
-      <IconRight className={`massive ${iconName} icon`}/>
+      <IconRight className={`massive ${iconName} icon`} season={season}/>
     </SeasonCtn>
     </>
   )
