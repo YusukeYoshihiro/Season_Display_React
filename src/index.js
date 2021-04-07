@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import SeasonDisplay from './SeasonDisplay';
-import Spinner from './spinner.gif';
+import Spinner from './Spinner';
 
 
 class App extends React.Component {
@@ -43,10 +43,7 @@ class App extends React.Component {
         !this.state.errorMessage && this.state.lat ? 
         <SeasonDisplay lat={this.state.lat} /> 
        :
-         <img 
-         src={Spinner} 
-         alt="spinner" 
-         style={{width:'55px'}}/>
+       <Spinner message="Please accept location request"/>
       }
       </div>
     );
